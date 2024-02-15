@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+	<link rel="stylesheet"  href="/static/careerguidance.css">
+    <script src="https://kit.fontawesome.com/06252b95f2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <ul class="list-unstyled components mb-5">
+                    <div class="user-wrapper">
+                        <img src="/images/adminpic.jpg" width="70px" height="70px" style="border-radius:50%;align-items:center;" alt="">
+                        <div>    
+                            <li>
+                                <span>Youth Alive Kenya</span>
+                            </li>  
+                        </br>                 
+                        <li>
+                            <a href="" class="active"><span class="las la-igloo"></span>
+                                <box-icon name='dashboard' type='solid' color='#eceaea'></box-icon>
+                            <span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/sponsors.html"><span class="las la-igloo"></span>
+                                <box-icon name='group' color='#eceaea'></box-icon>
+                            <span>Sponsors</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/volunteer.html"><span class="las la-igloo"></span>
+                                <box-icon name='male-female' color='#eceaea'></box-icon>
+                            <span>Volunteers</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/events.html"><span class="las la-igloo"></span>
+                                <box-icon name='calendar-plus' color='#eceaea'></box-icon>
+                            <span>Events</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/jobs.html"><span class="las la-igloo"></span>
+                                <box-icon name='briefcase' type='solid' color='#eceaea' ></box-icon>
+                            <span>Jobs</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/resources.html"><span class="las la-igloo"></span>
+                                <box-icon type='solid' name='guitar-amp' color='#eceaea'></box-icon>
+                            <span>Resources</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/mentorship.html"><span class="las la-igloo"></span>
+                                <box-icon name='money-withdraw' color='#eceaea'></box-icon>
+                            <span>Mentorship</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/leadership.html"><span class="las la-igloo"></span>
+                                <box-icon type='solid' name='medal' color='#eceaea'></box-icon>
+                            <span>Leadership</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/careerguidance.html"><span class="las la-igloo"></span>
+                                <box-icon type='solid' name='book-reader' color='#eceaea'></box-icon>
+                            <span>Career guidance</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/servicemanager.html"><span class="las la-igloo"></span>
+                                <box-icon type='solid' name='donate-heart' color='#eceaea'></box-icon>
+                            <span>Service manager</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/notifications.html"><span class="las la-igloo"></span>
+                                <box-icon name='bell-ring' type='solid' color='#eceaea' ></box-icon>
+                            <span>Notifications</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/chat.html"><span class="las la-igloo"></span>
+                                <box-icon name='message-rounded-dots' color='#eceaea' ></box-icon>
+                                <span>Chat</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/payment.html"><span class="las la-igloo"></span>
+                                <box-icon name='dollar' color='#eceaea'></box-icon>
+                            <span>Payment</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/users.html"><span class="las la-igloo"></span>
+                                <box-icon type='solid' name='user' color='#eceaea'></box-icon>
+                            <span>Users</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/financemanager.html"><span class="las la-igloo"></span>
+                                <box-icon type='solid' name='data' color='#eceaea'></box-icon>
+                            <span>Finance manager</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/booking.html"><span class="las la-igloo"></span>
+                                <box-icon name='calendar' type='solid' color='#f4eeee' ></box-icon>            
+                                <span>Booking</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/report.html"><span class="las la-igloo"></span>
+                                <box-icon name='report' type='solid' color='#eceaea' ></box-icon>
+                            <span>Reports</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/contact.html"><span class="las la-igloo"></span>
+                                <box-icon name='phone-call' type='solid' color='#eceaea' ></box-icon>
+                            <span>Contacts</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/help.html"><span class="las la-igloo"></span>
+                            <box-icon name='help-circle' type='solid' color='#eceaea' ></box-icon>
+                            <span>Help</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/feedback.html"><span class="las la-igloo"></span>
+                                <box-icon name='chat' color='#eceaea' ></box-icon>
+                            <span>Feedback</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/fundraising.html"><span class="las la-igloo"></span>
+                                <box-icon name='money' color='#eceaea' ></box-icon>
+                            <span>Fundraising</span></a>
+                        </li>
+                        <li>
+                            <a href="/templates/about.html"><span class="las la-igloo"></span>
+                                <box-icon name='info-circle' type='solid' color='#eceaea' ></box-icon>
+                            <span>About Us</span></a>
+                        </li> 
+                        <li>
+                            <a href="/templates/reporting.html"><span class="las la-igloo"></span>
+                                <box-icon type='solid' name='user-voice' color='#eceaea'></box-icon>
+                            <span>Report an issue</span></a>
+                        </li>
+             
+                </ul>
+          
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | </a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.--></p>
+	        </div>
+
+	      </div>
+        </nav>
+<!--================ End Sidenav Area  =================-->
+   
+    <!--page content-->
+    <div id="content" class="p-4 p-md-0">
+        <!--top nav start-->
+        <header>
+
+        </header>
+        <!--top nav end -->
+        
+
+
+     <div class="tabs">
+        <image  class="career" src="/images/adminpic.jpg">
+        <div class="tab-header">
+            <div class="accordion">
+                <div class="active">  
+                <button id="button-heading" class="accordion__button">Explore Careers</button>
+                <div class="explore">
+                </div>
+                </div>
+            </div>
+
+            <button type="button" class="accordion__button">Self Assessments</button>
+            <div class="accordion__content">
+                    <button type="button" class="accordion2__button">What is an assessment?</button>
+                    <div class="accordion__content2">
+                        <h3>Assessments can help you choose a good career fit.</h3>
+                        <p>Career assessment is a way to learn more about how well a variety of careers might suit you. Different types of assessments focuses on specific areas, such as skills, interests, or values. Typically, an assessment asks you to answer questions about what you like, don't like, what’s important to you, and what your strengths are.
+                            Since assessment results may relate to as many as 900 different occupations, don't panic if your results include careers that don't interest you. Experts recommended that you take more than one assessment to broaden your ideas before you make a decision. It can also be helpful to talk with a career counselor, family and friends before making a career decision.</p>
+                    </div>
+
+                    <button type="button" class="accordion2__button">Interest assessment</button>
+                        <div class="accordion__content2">
+                        <h3>Find a career that matches your interests.</h3>
+                        <p>An interest assessment can help you identify careers that meet your interests. Interest assessments usually ask you a series of questions about what you like and don't like to do. Then they match your likes and dislikes to careers.
+                         When you choose a career that matches your overall interests, you're more likely to enjoy your job. You're also more likely to be successful.</p>
+                        </div>  
+
+                    <button type="button" class="accordion2__button">Skills assessment</button>
+                        <div class="accordion__content2">
+                        <h3>What are your strongest skills? What types of work fit with the skills you have?</h3>
+                        <p>Your skills describe what you are good at, whether due to formal training, previous work experience, or other activities. Work-related skills include categories such as sales, data analysis, teaching, operating equipment, caring for patients, writing code, management, speaking a foreign language, and many more.
+                        Knowing, and being able to describe your skills allows you to write a clearer, more persuasive resume, and answer important questions at job interviews such as What can you do for my organization? and What problems can you solve ? </p>
+                    </div>
+
+                    <button type="button" class="accordion2__button">Work values</button>
+                        <div class="accordion__content2">
+                        <h3>Choose work that reflects your values to gain career satisfaction.</h3>
+                        <p>The best career choices are ones that match your values.</p>
+                        <h3>What are values?</h3>
+                        <p>Values are your beliefs about what is important or desirable. When your values line up with how you live and work, you tend to feel more satisfied and confident. Living or working in ways that contradict your values can lead to dissatisfaction, confusion, and discouragement. So there is good reason to clarify your values, and seek to match your work to them.</p>
+                        </div>
+            </div>
+
+            <button type="button" class="accordion__button">Learn about careers</button>
+            <div class="accordion__content">
+                    <button type="button" class="accordion2__button">Career clusters</button>
+                    <div class="accordion__content2">
+                    <h3>Start with career clusters to help choose your career direction.</h3>
+                    <p>Career clusters are groups of related types of work. They give you an easy way to explore different kinds of jobs within one broad category. Start with one of the clusters—like health care or construction—to learn what it involves, current trends, and the different careers it offers.It’s often easier to change jobs and advance within a career cluster. Identifying with a cluster can help you build your career and choose credentials—such as a college degree, specialized training, or certifications—that will qualify you for a variety of different, but related, jobs.</p>
+                    <h3>What's the difference between a career cluster and an industry?</h3>
+                    <p>Industries are groups of businesses that have related activities or products. Where career clusters include a variety of careers that share similar knowledge, skills, and interests, industries include many unrelated careers. The career cluster / industry pages show the industries and types of organizations that typically employ workers in each career cluster.</p>
+                    </div>
+
+                        <button type="button" class="accordion2__button">Career profiles</button>
+                        <div class="accordion__content2">
+                        <h3>Get in-depth details about more than 900 occupations.</h3>
+                        <p>A career profile is a great place to start your career research. You can learn what it might be like to work in different types of occupations, or careers. If a career looks attractive to you, there are links to see more in-depth information. Based on what you find out, the profiles may help you rule out some careers, too. </p>
+                        </div>
+    
+                            <button type="button" class="accordion2__button">Whats's hot</button>
+                            <div class="accordion__content2">
+                            <h3>Wonder which occupations are growing or declining in your area?</h3>
+                            <p>
+
+                                The best-informed career decisions start by asking yourself important questions:
+                                
+                                    Is the career you want growing or declining in your area?
+                                    How hard will it be to find a job when you complete your training program?
+                                    Will you be able to get the kind of job you want in a new location?
+                                
+                                You can find answers using the career reports below.
+                                
+                                Fastest-Growing Careers
+                                Find out which occupations are growing the fastest. Includes details about employment, wages, and education.
+                                
+                                Careers with the Most Openings
+                                Create a list of occupations with the most openings by state or nationwide. Includes details about employment, number of estimated openings, wages, and education.
+                                
+                                Careers with the Largest Employment
+                                Find national and state occupations with the largest employment. Includes details about employment, earnings, and education.
+                                
+                                Careers with Declining Employment
+                                Create a list of occupations with the largest declines in employment by state or nationwide. Includes details about employment, earnings, and education.
+                                 </p>
+                            </div>
+
+                                <button type="button" class="accordion2__button">Self-employment</button>
+                                <div class="accordion__content2">
+                                <h3>Thinking about self-employment?</h3>
+                                <p>Self-employment is an option for workers in many career fields and industries. It can help you start, advance, or round out your career. Read about different types of self-employment, and then read about some of the pros and cons to self-employment.
+                                    Self-employment options
+                                    
+                                    Gig employment. Are you looking to pick up on-demand, short-term jobs? Gig workers are paid per task or project. Common gig jobs are are delivery driver, shopper, virtual assistant, caterer, and tutor. Find gig opportunities by searching "gig work" in your local area.
+                                    
+                                    Freelance. Being a freelancer isn’t always different than gig work. But the term is often used to apply to more skilled and long-term projects. Freelancing simply means you offer your unique skills or talent on a pay-for-service basis, outside of a regular employer-employee relationship. Common freelance options include:
+                                    
+                                        Web design
+                                        Writing
+                                        Repair work (specializing in jewelry, furniture, vehicles, or other areas)
+                                        Landscaping
+                                        Accounting
+                                        Photography
+                                        Personal training/fitness coaching
+                                    
+                                    Start your own business. Running your own business isn’t necessarily different from freelancing: some freelancers are running their own business, and even employing others to help them conduct their business. But here, we’re talking about running a business that has a physical location and/or employs others to make or sell goods or provide services. You might do this by starting your own business, buying a stand-alone existing business, or joining a franchise program. Learn more about planning, launching, managing, and growing your business from the Small Business Administration.
+                                    Is self-employment right for you?
+                                    
+                                    Working for yourself can be a great way to tailor your work to your specific talents and interests. It can also be a great way to be able to set your own schedule and workplace expectations. But, being self-employed can have challenges too. It’s best for people who are motivated and able to keep themselves on task. Check out these lists of benefits and challenges to self-employment to help you decide if it’s right for you.
+                                    
+                                    Benefits to self-employment
+                                    
+                                        Opportunity to do what you love. It can be easier to tailor self-employment directly to your own interests, skills, and values than it is to match those qualities as an employee. As your own boss, you get to choose which projects to accept or decline as well.
+                                        More flexibility. You can have more say over your hours, location, and working conditions such as dress code, break times, environment, etc.
+                                        Expenses. There are some work-related expenses you can often cut when you’re self-employed: you’ll often spend less on your commute and your wardrobe, and you can usually save more tax-free for retirement as well as deduct additional business expenses (but read about taxes in the below list of challenges too!)
+                                    
+                                    Challenges to self-employment
+                                    
+                                        Lack of benefits. Don’t underestimate the value of benefits you might receive as an employee. Employer-paid portions of health-care, retirement contributions, education reimbursement, and paid time off can add up to l nearly 40 percent of a salary.
+                                        Increased risk. It’s true you can’t get fired when you’re your own boss, but you also have no paycheck to fall back on when business is slow or something else goes wrong.
+                                        Taxes. Taxes can—but don’t always have to—become more complicated in self-employment. Depending on your situation, you might have to hire an accountant. And while there are some tax advantages, don’t forget that you also have to pick up the half of employment taxes (Social Security and Medicare) that employers are responsible for—that adds another 7.5 percent to your tax rate. Read more about self-employment tax form the IRS.
+                                     </p>
+                                </div>
+        
+    
+            </div>              
+
+            <div class="accordion">
+                <button type="button" class="accordion__button">Plan your career</button>
+                <div class="accordion__content">
+                    <button type="button" class="accordion2__button">Set career goals</button>
+                    <div class="accordion__content2">
+                        <h3>Set SMART goals to get ahead in your career.</h3>
+                        <p>
+                            Set SMART goals to get ahead in your career.
+                            
+                            Where would you like to be in one year? In five years? What experiences will help you achieve that? What interests and skills would you like to use in your career? Setting a career goal is about deciding where you want to head in your career, and noting the steps needed to reach that point.
+                            What are examples of typical career goals?
+                            
+                                Increase professional knowledge and training. Whether taking a college class, a workshop offered by an employer, getting a certification, or other, this is a common goal. It can be useful both if you are looking for work, or are already employed.
+                                Increase earnings. Being underpaid often detracts from motivation and performance. Making changes to earn more increases enthusiasm for most jobs, and motivates a job search.
+                                Improve low-functioning work processes or relationships. This goal area can make the daily work experience more positive and rewarding.
+                                Have new experiences. Whether volunteering in your community or at work, joining a professional association to meet new people in your field, or introducing yourself to people you never talk with, new experiences fuel interest in your career.
+                                Attain a leadership role. Many people feel their ultimate goal is to lead in their career or organization. Establishing the steps to achieve a leadership role makes it possible.
+                            
+                            How to set goals
+                            
+                            A popular acronym can help you write effective goals. Try the SMART system for your career goal.
+                            
+                            Specific – Aim for a specific, concrete area for your goal or steps. For example, “make ten job search calls following up on my LinkedIn connections” vs. “make some networking connections.”
+                            
+                            Measurable – To determine if your goal is measurable, ask questions such as: how much? How many? How will I know when it is accomplished?
+                            
+                            Attainable – Goals are most attainable when steps are thought out clearly and allow enough time. How do you intend to accomplish your goal? Which actions follow on other actions? Is the goal realistic given where you’re starting from? It should be a challenge, but also achievable.
+                            
+                            Relevant – A relevant goal is one that really matters to you and to the end result. Is it worthwhile? Is this the right time? Does your goal relate to other efforts or timelines? Does it require resources that are currently available?
+                            
+                            Timely - A goal should be grounded within a defined time period, both for clarity and to give your action urgency. When do you want to begin? When do you want to complete each step?
+                            Tips to achieve your goal
+                            
+                                Write down the steps. Write down your career goal and the steps to get there. This will help you remember and achieve each step. Post your list where you will see it often.
+                                Set deadlines. Give yourself a date to complete your goals by. Write the date when you actually finish each step.
+                                Reward yourself. Taking steps toward goals is hard work. Think of small rewards to give yourself when you complete any step, to help you stay motivated.
+                                Have a goal partner. Find someone to help you stick to your plan: a friend, co-worker, a job coach, or someone else. Discuss your goals, and check in with them when you complete steps. If possible, do the same for your partner!
+                            
+                            </p>
+                    </div>
+
+                    <button type="button" class="accordion2__button">Salaries</button>
+                    <div class="accordion__content2">
+                        <h3>Get salary and wage information for more than 800 different occupations.</h3>
+                        <p>
+
+                            “What does the job pay?” is one of the first questions you may have in your job search. Get a head start by learning typical pay for more than 800 occupations in your area. Salary information can also equip you in several ways:
+                            
+                                Job applications or interviewers may ask for your salary requirements. Research wages paid in your area for different levels of experience using Salary Finder. For more tips, visit negotiating a salary.
+                                Career explorers and students can visit Highest-paying Careers to see which careers pay the most nationally, in their state, and for different levels of education.
+                                Visit Wages by Occupation and Local Area to research salaries for your current or planned new location.
+                                For more detailed information on skill requirements and employment trends in different occupations, check out the Occupation Profile.
+                            
+                            Keep these points in mind as you read salary information:
+                            
+                                The "High" wage is usually earned by very experienced, trained workers in an occupation. Only 10% of workers earn more, while 90% of workers earn less than that amount.
+                                Median wage means half the workers in that occupation earn less and half earn more.
+                                The "Low" figure shows the range usually earned by entry-level, inexperienced workers. Just 10% of workers earn less and 90% earn more than this amount.
+                                In general, higher wages are earned in urban areas than in smaller towns and rural areas.
+                            
+                            </p>
+                    </div>
+
+                    <button type="button" class="accordion2__button">Research industries</button>
+                    <div class="accordion__content2">
+                        <h3>Industry changes can create or eliminate jobs. Find trends for your state.</h3>
+                        <p>Learn about industry trends to improve your job search or career planning.
+                            Why care about industries?
+                            
+                            An “industry” is a group of companies related by business activities, such as manufacturing, health care, or energy production. 
+                            
+                            In these reports, learn about which industries have the largest employment, pay the most, and are fastest-growing. This information can help you think about the kinds of companies you'd like to work for. You can also learn which industries are losing workers, which may be important for your long-term career plans.  
+                            
+                            Some workers can choose their preferred industry because their skills or knowledge are needed by many industries. For example, positions in IT fields, human resources, sales, and other occupations exist in most industries.  
+                            
+                            View Career Cluster / Industry Videos
+                            Learn about major industries and the careers they offer with these videos highlighting popular carer clusters.
+                            
+                            Fastest-Growing Industries
+                            Find the industries that are projected to grow the fastest. Includes past and projected industry employment levels and growth rates.
+                            
+                            Industries with the Largest Employment
+                            View the industries with the largest employment nationwide. Includes details about employment and links to more detailed industry information.
+                            
+                            Industries with Declining Employment
+                            Create a list of industries with the largest projected decline in employment nationwide. Includes past and projected industry employment levels and growth rates.
+                            
+                            Highest-Paying Industries
+                            Find the highest-paying industries. Includes details of average weekly wages and average annual wages.</p>
+                    </div>
+
+                    <button type="button" class="accordion2__button">Licensed occupations</button>
+                    <div class="accordion__content2">
+                        <h3>Does your current or new occupation require a license?</h3>
+                        <p>By state laws, workers in certain fields must have a license. Licensing is intended to ensure that only competent and ethical individuals practice in an occupation. Examples of occupations licensed in many states include: teachers, land surveyors, doctors, lawyers, cosmetologists, nurses, building contractors, counselors, therapists, and electricians.
+
+                            To obtain a license you must demonstrate that you meet state standards for that career. Steps include completing specified training, logging a designated amount of work experience, and taking a licensure exam. Most exams assess knowledge of work processes, codes, policies, standard practices, and more.
+                            
+                            Most licenses are authorized by state government and give an individual the right to practice that field. Licensure requirements for some occupations vary by state, so be sure to check your state requirements.
+                            
+                            Although you may have heard the term “certification” used interchangeably with “licensure”, a major difference is that certifications are not required, though still helpful in qualifying for a competitive job, while licensure is legally required to practice certain professions.
+                            
+                            </p>
+                    </div>
+
+                    <button type="button" class="accordion2__button">Professional development</button>
+                    <div class="accordion__content2">
+                        <h3>Improve your job and pay prospects by expanding your skills and knowledge.</h3>
+                        <p>
+
+                            Professional development consists of learning activities that improve knowledge and skills related to your career. It can range from a one-hour webinar to a four-year college degree.
+                            
+                            Many individuals invest in professional development to increase their job satisfaction, improve job search prospects, or to earn better pay. By developing the expertise most needed by employers in your field, you will be in a better position to look for a new job, or advance in your current job.
+                            What are my options?
+                            
+                            Professional development includes a variety of activities: college courses or degrees, professional conferences, professional skill training offered by your employer, certifications, workshops, joining professional associations, reading trade or industry publications, holding informational interviews with other professionals, taking webinars, working with a mentor, obtaining professional coaching or consultation to improve your skills, and more.
+                            How will it help my career?
+                            
+                            Professional development can help you:
+                            
+                                Strengthen your opportunities for promotion, career longevity and personal growth
+                                Meet annual training hours required by some professions to maintain the ability to practice, i.e. teachers, therapists, medical professionals, and others
+                                Keep up to date on new equipment or practices in your field, especially new technology
+                                Observe industry trends and build meaningful professional relationships
+                            
+                            Next steps
+                            
+                                Find local training programs lasting one month to two years
+                                Learn about certifications you could obtain in your field
+                                Find a professional association in your field, and consider joining
+                            
+                            Free online learning is also available in many subject areas. Explore options by entering your desired skill area in any search engine, or try one of these websites:
+                            
+                                Open Culture offers free online courses in a wide variety of topics
+                                Math knowledge can be a career strengthener. Khan Academy offers excellent, free courses
+                            
+                            </p>
+                    </div>
+
+                </div>              
+            </div>
+
+        </div>
+        <div class="tab-indicator"></div>
+     </div>
+
+</div>
+</div>
+
+<!--End of page content-->
+<script>
+    document.querySelectorAll('.accordion__button').forEach(button=> {
+        button.addEventListener('click',()=> {
+            const accordionContent = button.nextElementSibling;
+
+            button.classList.toggle('accordion__button--active');
+
+            if (button.classList.contains('accordion__button--active')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            } else {
+                accordionContent.style.maxHeight = 0;
+            }
+    });
+    });
+</script>
+<script>
+    document.querySelectorAll('.accordion2__button').forEach(button=> {
+        button.addEventListener('click',()=> {
+            const accordionContent = button.nextElementSibling;
+
+            button.classList.toggle('accordion2__button--active');
+
+            if (button.classList.contains('accordion2__button--active')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            } else {
+                accordionContent.style.maxHeight = 0;
+            }
+    });
+    });
+</script>
+</body>
+</html>

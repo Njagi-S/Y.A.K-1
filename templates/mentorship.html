@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+	<link rel="stylesheet" href="/static/mentorship.css">
+    <script src="https://kit.fontawesome.com/06252b95f2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <ul class="list-unstyled components mb-5">
+                    <div class="user-wrapper">
+                        <img src="/images/adminpic.jpg" width="70px" height="70px" style="border-radius:50%;align-items:center;" alt="">
+                        <div>    
+                            <li>
+                                <span>Youth Alive Kenya</span>
+                            </li>  
+                        </br>                 
+                    <li>
+                        <a href="" class="active"><span class="las la-igloo"></span>
+                            <box-icon name='dashboard' type='solid' color='#eceaea'></box-icon>
+                        <span>Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/sponsors.html"><span class="las la-igloo"></span>
+                            <box-icon name='group' color='#eceaea'></box-icon>
+                        <span>Sponsors</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/volunteer.html"><span class="las la-igloo"></span>
+                            <box-icon name='male-female' color='#eceaea'></box-icon>
+                        <span>Volunteers</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/events.html"><span class="las la-igloo"></span>
+                            <box-icon name='calendar-plus' color='#eceaea'></box-icon>
+                        <span>Events</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/jobs.html"><span class="las la-igloo"></span>
+                            <box-icon name='briefcase' type='solid' color='#eceaea' ></box-icon>
+                        <span>Jobs</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/resources.html"><span class="las la-igloo"></span>
+                            <box-icon type='solid' name='guitar-amp' color='#eceaea'></box-icon>
+                        <span>Resources</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/mentorship.html"><span class="las la-igloo"></span>
+                            <box-icon name='money-withdraw' color='#eceaea'></box-icon>
+                        <span>Mentorship</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/leadership.html"><span class="las la-igloo"></span>
+                            <box-icon type='solid' name='medal' color='#eceaea'></box-icon>
+                        <span>Leadership</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/careerguidance.html"><span class="las la-igloo"></span>
+                            <box-icon type='solid' name='book-reader' color='#eceaea'></box-icon>
+                        <span>Career guidance</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/servicemanager.html"><span class="las la-igloo"></span>
+                            <box-icon type='solid' name='donate-heart' color='#eceaea'></box-icon>
+                        <span>Service manager</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/notifications.html"><span class="las la-igloo"></span>
+                            <box-icon name='bell-ring' type='solid' color='#eceaea' ></box-icon>
+                        <span>Notifications</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/chat.html"><span class="las la-igloo"></span>
+                            <box-icon name='message-rounded-dots' color='#eceaea' ></box-icon>
+                            <span>Chat</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/reporting.html"><span class="las la-igloo"></span>
+                            <box-icon type='solid' name='user-voice' color='#eceaea'></box-icon>
+                        <span>Reporting</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/payment.html"><span class="las la-igloo"></span>
+                            <box-icon name='dollar' color='#eceaea'></box-icon>
+                        <span>Payment</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/users.html"><span class="las la-igloo"></span>
+                            <box-icon type='solid' name='user' color='#eceaea'></box-icon>
+                        <span>Users</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/financemanager.html"><span class="las la-igloo"></span>
+                            <box-icon type='solid' name='data' color='#eceaea'></box-icon>
+                        <span>Finance manager</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/booking.html"><span class="las la-igloo"></span>
+                            <box-icon name='calendar' type='solid' color='#f4eeee' ></box-icon>            
+                            <span>Booking</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/report.html"><span class="las la-igloo"></span>
+                            <box-icon name='report' type='solid' color='#eceaea' ></box-icon>
+                        <span>Reports</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/contact.html"><span class="las la-igloo"></span>
+                            <box-icon name='phone-call' type='solid' color='#eceaea' ></box-icon>
+                        <span>Contacts</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/help.html"><span class="las la-igloo"></span>
+                        <box-icon name='help-circle' type='solid' color='#eceaea' ></box-icon>
+                        <span>Help</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/feedback.html"><span class="las la-igloo"></span>
+                            <box-icon name='chat' color='#eceaea' ></box-icon>
+                        <span>Feedback</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/fundraising.html"><span class="las la-igloo"></span>
+                            <box-icon name='money' color='#eceaea' ></box-icon>
+                        <span>Fundraising</span></a>
+                    </li>
+                    <li>
+                        <a href="/templates/about.html"><span class="las la-igloo"></span>
+                            <box-icon name='info-circle' type='solid' color='#eceaea' ></box-icon>
+                        <span>About Us</span></a>
+                    </li>              
+	        </ul>
+          
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | </a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.--></p>
+	        </div>
+
+	      </div>
+        </nav>
+<!--================ End Sidenav Area  =================-->
+   
+
+    <!--page content-->
+    <div id="content" class="p-4 p-md-0">
+        
+        <!--body start-->
+        <div class="col-12" >  
+            <div class="topsection">
+                <h4 style="font-weight:350;">Skip the uncertainty</h4>
+                <h2>Grow your startup faster with 1:1 mentorship</h2>
+                <p>Pick the brains of mentors who have driven growth at some of the world's leadership startups.See the blind spots in your decision-making</p>
+                <h6>Talk to operators from top startups : </h6>
+                <button>Start Mentorship Programmes</button>
+            </div>
+
+            <div class="secondsection">
+                <h3>Who is a good fit for Mentorship?</h3>
+                <div>
+                    <div class="row">
+                    <div class="col-4">
+                        <h4>Founders and entrepreneurship</h4>
+                        <p>It's easy to feel isolated as a founders. At GrowthMentor, you'll get access to a network of experienced entrepreneurs for those real, no-BS conversations that can help you refine your strategy and make decisions with more confidence.</p>
+                    </div>
+                    <div class="col-4">
+                        <h4>Growth roles</h4>
+                        <p>Get direct access to some of the most accomplished growth talent in the industry. Being able to tap into years of experience from leaders who've been in the trenches before is the most underrated growth hack out there. Make it your competitive advantage.</p>
+                    </div>
+                    <div class="col-4">
+                        <h4>Marketing roles</h4>
+                        <p>Marketers are under pressure to wear many hats. But being an expert at everything is impossible, so what do you do? Let's talk about it. Have straightforward conversations to help you focus on your career growth.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+<!--column 1 start-->
+            <div class="categoryheading">
+                <h2>Mentors for founders and entrepreneurs</h2></hr>
+                <div>
+                   
+                    <!--column 1-->
+<div class="col-12" >
+    <div class="row"> 
+    <div class="cards"> 
+
+    <div class="col-4">
+    <div class="card" >
+        <img class="card-img-top" src="/images/adminpic.jpg">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"></li>
+        </ul>
+        <div class="eventitems">
+        <div class="card-body" >
+            <h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+            <h5 class="card-title" style="font-size:15px;font-weight:200;">Co-founder & CEO||</h5>
+            <a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+       </div>
+       <div>
+       </div>
+    </div>
+      </div>
+    </div>
+
+
+    <div class="col-4">
+        <div class="card" >
+            <img class="card-img-top" src="/images/adminpic.jpg">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+            </ul>
+            <div class="eventitems">
+            <div class="card-body" >
+                <h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+                <h5 class="card-title" style="font-size:15px;font-weight:200;">Co-founder & CEO||</h5>
+                <a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+           </div>
+           <div>
+           </div>
+        </div>
+          </div>
+        </div>
+    
+
+        
+    <div class="col-4">
+        <div class="card" >
+            <img class="card-img-top" src="/images/adminpic.jpg">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+            </ul>
+            <div class="eventitems">
+            <div class="card-body" >
+                <h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+                <h5 class="card-title" style="font-size:15px;font-weight:200;">Co-founder & CEO||</h5>
+                <a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+           </div>
+           <div>
+           </div>
+        </div>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+</div>    
+<!--end of column1-->
+<!--end of column 1 start-->
+
+
+<!--column 1 start-->
+<div class="categoryheading">
+    <h2>Mentors for marketing roles</h2></hr>
+    <div>
+       
+        <!--column 1-->
+<div class="col-12" >
+<div class="row"> 
+<div class="cards"> 
+
+<div class="col-4">
+<div class="card" >
+<img class="card-img-top" src="/images/adminpic.jpg">
+<ul class="list-group list-group-flush">
+<li class="list-group-item"></li>
+</ul>
+<div class="eventitems">
+<div class="card-body" >
+<h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+<h5 class="card-title" style="font-size:15px;font-weight:200;">Growth Marketer||</h5>
+<a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-4">
+    <div class="card" >
+    <img class="card-img-top" src="/images/adminpic.jpg">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"></li>
+    </ul>
+    <div class="eventitems">
+    <div class="card-body" >
+    <h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+    <h5 class="card-title" style="font-size:15px;font-weight:200;">Growth Marketer||</h5>
+    <a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+    </div>
+    <div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+
+<div class="col-4">
+<div class="card" >
+<img class="card-img-top" src="/images/adminpic.jpg">
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"></li>
+</ul>
+<div class="eventitems">
+<div class="card-body" >
+    <h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+    <h5 class="card-title" style="font-size:15px;font-weight:200;">Marketing Memeticist||</h5>
+    <a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>    
+<!--end of column1-->
+<!--end of column 1 start-->
+
+
+<!--column 1 start-->
+<div class="categoryheading">
+    <h2>Mentors for growth roles</h2></hr>
+    <div>
+       
+        <!--column 1-->
+<div class="col-12" >
+<div class="row"> 
+<div class="cards"> 
+
+<div class="col-4">
+<div class="card" >
+<img class="card-img-top" src="/images/adminpic.jpg" >
+<ul class="list-group list-group-flush">
+<li class="list-group-item"></li>
+</ul>
+<div class="eventitems">
+<div class="card-body" >
+<h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+<h5 class="card-title" style="font-size:15px;font-weight:200;">Head of Growth||</h5>
+<a href="#" class="card-link" style="font-size:15px;" ><button class="viewprofile">View Profile</button></a>
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-4">
+    <div class="card" >
+    <img class="card-img-top" src="/images/adminpic.jpg" >
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"></li>
+    </ul>
+    <div class="eventitems">
+    <div class="card-body" >
+    <h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+    <h5 class="card-title" style="font-size:15px;font-weight:200;">Head of Growth||</h5>
+    <a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+    </div>
+    <div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    
+
+<div class="col-4">
+<div class="card" >
+<img class="card-img-top" src="/images/adminpic.jpg" >
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"></li>
+</ul>
+<div class="eventitems">
+<div class="card-body" >
+    <h5 class="card-title" style="font-size:15px;">Sheldon Njagi</h5>
+    <h5 class="card-title" style="font-size:15px;font-weight:200;">Growth Manager||</h5>
+    <a href="#" class="card-link" style="font-size:15px;"><button class="viewprofile">View Profile</button></a>
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>    
+<!--end of column1-->
+<!--end of column 1 start-->
+
+
+                </div>
+            </div>
+        </div>    
+<!--End of page content-->
+    </div>
+
+</div>
+</body>
+</html>
